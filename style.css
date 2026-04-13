@@ -1,0 +1,317 @@
+/* 1. CONFIGURAÇÕES GERAIS E VARIÁVEIS */
+:root {
+    --bg-header: #000000;    /* Preto absoluto para menu e seções intercaladas */
+    --bg-content: #08090a;   /* Cinza muito escuro para o conteúdo principal */
+    --brand-cyan: #00d2ff;
+    --text-gray: #b5b5b5;
+}
+
+html {
+    scroll-padding-top: 80px; /* Isso evita que a navbar fixa cubra o título da seção ao rolar */
+}
+
+body {
+    background-color: var(--bg-content);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* 2. NAVEGAÇÃO (NAVBAR) */
+.custom-nav {
+    background-color: var(--bg-header);
+    border-bottom: 1px solid rgba(0, 210, 255, 0.1);
+    padding: 15px 0;
+}
+
+.brand-color {
+    color: var(--brand-cyan);
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: var(--brand-cyan) !important;
+    border-bottom: 2px solid var(--brand-cyan);
+}
+
+/* 3. SEÇÃO HERO */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px; /* Compensa a navbar fixa */
+}
+
+/* Container da Imagem Circular com Neon */
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 4px solid var(--brand-cyan);
+    box-shadow: 0 0 30px var(--brand-cyan), inset 0 0 20px var(--brand-cyan);
+    overflow: hidden;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Efeito Typing */
+.cursor {
+    font-weight: 300;
+    color: var(--brand-cyan);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* 4. SEÇÃO SOBRE */
+#sobre, #contato {
+    background-color: var(--bg-header); /* Intercala a cor com a Hero */
+}
+
+#contato {
+    min-height: 80vh; /* Garante que a seção seja alta o suficiente para ser ativada */
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Estilização do bloco de experiência atual (ITPower) */
+.experience-box {
+    border-left: 3px solid var(--brand-cyan);
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+/* Imagem com sombra quadrada deslocada */
+.about-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-shadow-right {
+    box-shadow: -20px 20px 0px var(--brand-cyan);
+    border: 2px solid var(--brand-cyan);
+    transition: 0.4s;
+}
+
+.custom-shadow-right:hover {
+    transform: translate(-10px, 10px);
+    box-shadow: 0px 0px 0px var(--brand-cyan);
+}
+
+/* Badge flutuante na foto (Bacharelando) */
+.experience-badge-left {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: #1a1d20;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--brand-cyan);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+/* Lista de Tecnologias */
+.tech-stack li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.tech-stack li i {
+    width: 25px; /* Alinhamento perfeito dos ícones */
+    text-align: center;
+}
+
+/* 5. BOTÕES */
+.btn-primary-custom {
+    background-color: var(--brand-cyan);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #00b8e6;
+    box-shadow: 0 0 20px var(--brand-cyan);
+    transform: translateY(-2px);
+}
+
+.btn-outline-cyan {
+    border: 2px solid var(--brand-cyan);
+    color: var(--brand-cyan);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-outline-cyan:hover {
+    background-color: var(--brand-cyan);
+    color: #000;
+    box-shadow: 0 0 20px var(--brand-cyan);
+}
+
+/* 6. RESPONSIVIDADE */
+@media (max-width: 991px) {
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .experience-box {
+        text-align: left;
+    }
+
+    p.lead {
+        margin: 0 auto 30px auto;
+    }
+}
+
+.about-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(0, 210, 255, 0.15);
+    border-radius: 16px;
+    padding: 18px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand-cyan);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.12);
+}
+
+/* Container da Imagem com Overlay */
+.project-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid rgba(0, 210, 255, 0.2);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-img-container img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+}
+
+.project-img-container:hover {
+    border-color: var(--brand-cyan);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+.project-img-container:hover img {
+    transform: scale(1.03);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro ao passar o mouse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-cyan);
+    text-decoration: none;
+    opacity: 0; /* Invisível por padrão */
+    transition: 0.5s ease;
+}
+
+/* Badges de Tecnologia */
+.border-cyan {
+    border-color: var(--brand-cyan) !important;
+    color: var(--brand-cyan);
+}
+
+/* Ajustes do Carrossel */
+.custom-ctrl {
+    width: 5%;
+    opacity: 1;
+}
+
+/* Posiciona os botões de avançar/voltar fora da área do conteúdo em telas grandes */
+@media (min-width: 992px) {
+    .carousel-control-prev { left: -80px; }
+    .carousel-control-next { right: -80px; }
+}
+
+@media (max-width: 991px) {
+    .project-img-container {
+        margin-top: 30px;
+    }
+}
+
+/* Estilização dos Cards de Contato */
+.contact-card {
+    display: block;
+    background-color: var(--bg-header);
+    border: 1px solid rgba(0, 210, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.contact-card-icon {
+    font-size: 3rem;
+    color: var(--brand-cyan);
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.contact-card h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Efeito Hover Neon */
+.contact-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--brand-cyan);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.15);
+    color: white; /* Garante que o texto não mude de cor indesejada */
+}
+
+.contact-card:hover .contact-card-icon {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px var(--brand-cyan);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 30px 15px;
+    }
+}

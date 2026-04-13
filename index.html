@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Silva | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 brand-color" href="#">RyanDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white order-2 order-lg-1">
+                    <h4 class="fw-bold mb-0 text-white">Olá, eu sou</h4>
+                    <h1 class="display-3 fw-bold mb-1 brand-color">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </h1>
+                    <h2 class="h1 fw-bold mb-4">E sou um <span class="brand-color">Desenvolvedor Front-end</span></h2>
+                    <p class="lead mb-4 text-white-50" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="200">
+                        Transformando ideias em <span class="text-white fw-semibold">interfaces de alto desempenho</span>. 
+                        Com mais de 3 anos de experiência, foco em construir aplicações escaláveis, unindo eficiência técnica e as melhores práticas de <span class="brand-color">UI/UX</span>.
+                    </p>
+                    
+                    <a href="img/CurriculoRyanSilva.pdf" download="Curriculo_Ryan_Silva" class="btn btn-primary-custom px-4 py-2 fw-bold">BAIXAR CV</a>
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2 text-center mb-5 mb-lg-0">
+                    <div class="profile-img-container">
+                        <img src="img/FotoRetrato.jpeg" alt="Retrato" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-start">
+                
+                <div class="col-lg-7 pe-lg-5 order-2 order-lg-1" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-3">Sobre <span class="brand-color">Mim</span></h2>
+                    
+                    <p class="text-white-50">
+                        Minha trajetória na tecnologia começou no <strong>ITB (Instituto Técnico de Barueri)</strong>, onde realizei o <strong>Ensino Médio integrado ao curso Técnico em Informática</strong>. Esta base sólida me permitiu dominar lógica e fundamentos de programação precocemente.
+                    </p>
+                    <p class="text-white-50">
+                        Atualmente, busco o grau de <strong>Bacharel em Sistemas de Informação</strong> pela <strong>UNIP (Universidade Paulista)</strong>, aprofundando meus conhecimentos em Engenharia de Software e arquitetura de sistemas.
+                    </p>
+                    
+                    <div class="experience-box mb-4">
+                        <span class="small brand-color fw-bold">2023 - ATUALMENTE</span>
+                        <h5 class="text-white mb-1">ITPower Software e Serviços LTDA</h5>
+                        <p class="text-white-50">
+                            Atuo como <strong>Desenvolvedor Full Stack</strong> no ramo de seguradoras, desenvolvendo soluções ponta a ponta com foco em qualidade, escalabilidade e <strong>Clean Code</strong>. 
+                            Também participo ativamente das cerimônias ágeis, incluindo <strong>dailys, refinamento de demandas, plannings e retrospectivas</strong>, contribuindo com visão técnica, estimativas e evolução contínua das entregas.
+                        </p>
+                    </div>
+
+                    <div class="row g-3 tech-stack" data-aos="fade-up" data-aos-delay="300">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-code brand-color me-2"></i> HTML5, CSS3 & JS</li>
+                                <li><i class="fas fa-layer-group brand-color me-2"></i> Bootstrap & jQuery</li>
+                                <li><i class="fab fa-github brand-color me-2"></i> Git & GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-database brand-color me-2"></i> SQL Server & ColdFusion</li>
+                                <li><i class="fas fa-exchange-alt brand-color me-2"></i> Postman & SoapUI (APIs)</li>
+                                <li><i class="fas fa-tasks brand-color me-2"></i> Azure & Trello</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="about-card p-4 border-cyan">
+                        <h5 class="brand-color fw-bold mb-4"><i class="fas fa-rocket me-2"></i> Evolução Contínua</h5>
+                        
+                        <div class="mb-4">
+                            <h6 class="text-white mb-3">Estudando Atualmente:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge-study">React.js</span>
+                                <span class="badge-study">Vue.js</span>
+                                <span class="badge-study">Tailwind CSS</span>
+                                <span class="badge-study">TypeScript</span>
+                                <span class="badge-study">Angular</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="text-white mb-3">Soft Skills & Processos:</h6>
+                            <ul class="list-unstyled text-white-50 small">
+                                <li class="mb-3"><i class="fas fa-check-circle brand-color me-2"></i> <strong>Clean Code:</strong> Foco em código legível e manutenível.</li>
+                                <li class="mb-3"><i class="fas fa-sync brand-color me-2"></i> <strong>Agile:</strong> Vivência com Scrum e entregas iterativas.</li>
+                                <li class="mb-3"><i class="fas fa-lightbulb brand-color me-2"></i> <strong>Resolução de Problemas:</strong> Foco em regras de negócio complexas.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 rounded-3" style="background: rgba(0, 210, 255, 0.05); border: 1px dashed var(--brand-cyan);">
+                            <p class="small mb-0 text-white-50">
+                                <i class="fas fa-university brand-color me-2"></i> 
+                                Bacharelando em <strong>Sistemas de Informação</strong>, focado em Engenharia e Arquitetura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-5">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold mb-5 text-center">Meus <span class="brand-color">Projetos</span></h2>
+
+            <div id="projectCarousel" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-interval="false">
+                <div class="carousel-inner" id="carousel-projects-container">
+                    
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">    
+                            <div class="col-lg-6 pe-lg-5 order-2 order-lg-1">
+                                <span class="brand-color fw-bold">Projeto Acadêmico</span>
+                                <h3 class="display-6 fw-bold mb-3 text-white">TCC - Turismo Aventura</h3>
+                                <p class="text-white-50">
+                                    Sistema Full Stack desenvolvido como TCC do curso técnico de T.I. no ITB.
+                                    Plataforma voltada ao setor de turismo para descoberta e gerenciamento de experiências de aventura,
+                                    integrando front-end, back-end, banco de dados e regras de negócio com foco em escalabilidade.
+                                </p>
+                                <div class="mt-4 mb-4">
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">HTML5</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">CSS3</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">JavaScript</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">Bootstrap / Jquery</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">PHP</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">My SQL</span>
+                                    <span class="badge rounded-pill bg-dark border border-cyan me-2">Hostgator</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="project-img-container">
+                                    <img src="img/FotoProjeto1.jpeg" class="d-block w-100 rounded-4" alt="Projeto Principal">
+                                    <a href="https://github.com/ryansantosz/TCC_Turismo_Aventura" target="_blank" class="project-overlay">
+                                        <span class="fw-bold">IR ATÉ O PROJETO? <i class="fas fa-external-link-alt ms-2"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev custom-ctrl" id="prevBtn" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <i class="fas fa-chevron-left fs-3 brand-color"></i>
+                </button>
+                <button class="carousel-control-next custom-ctrl" id="nextBtn" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <i class="fas fa-chevron-right fs-3 brand-color"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-3">Vamos <span class="brand-color">Conversar?</span></h2>
+            <p class="text-white-50 mb-5 mx-auto" style="max-width: 600px;">
+                Estou disponível para novos projetos e oportunidades. Escolha o canal de sua preferência e responderei o mais breve possível.
+            </p>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <a href="https://wa.me/5511954830310?text=Olá%20Ryan,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="https://www.linkedin.com/in/ssilva-ryan" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="mailto:ryanssilva2911@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>E-mail</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top border-dark mt-5">
+        <p class="mb-0 text-white-50 small">
+            &copy; 2026 Ryan Silva
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, // Duração da animação em milissegundos
+        once: true,     // Se a animação deve acontecer apenas uma vez
+    });
+    </script>
+</body>
+</html>
