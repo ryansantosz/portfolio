@@ -277,10 +277,19 @@ body {
         min-height: auto;
     }
 
-    .profile-img-container {
-        width: 280px;
-        height: 280px;
-        margin-bottom: 30px;
+    .project-overlay {
+        opacity: 1 !important; /* Força a visibilidade */
+        background: rgba(0, 0, 0, 0.6); /* Fundo um pouco mais suave */
+        height: auto;
+        top: auto;
+        bottom: 0;
+        padding: 15px 0;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    
+    .project-img-container:hover img {
+        transform: none; /* Evita zoom acidental no toque */
     }
 
     .display-3 { font-size: 2.5rem; }
